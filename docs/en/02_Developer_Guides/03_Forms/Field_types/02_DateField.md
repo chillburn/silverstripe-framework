@@ -51,7 +51,7 @@ strtotime()).
 
 	:::php
 	DateField::create('MyDate')
-		->setConfig('min', '-7 days')
+		->setConfig('min', date('Y-m-d', strtotime('-7 days')))
 		->setConfig('max', '2012-12-31')
 		
 ## Separate Day / Month / Year Fields
